@@ -1,4 +1,4 @@
-from transaction_service import trade_cards_with_transaction
+from services.transaction_service import trade_cards_with_transaction
 
 result = trade_cards_with_transaction(
     event_date="2026-09-29",

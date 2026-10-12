@@ -1,12 +1,12 @@
 import mysql.connector
 
 from database import get_connection
-from transaction_repository import create_transaction_with_cursor
-from transaction_repository import add_transaction_item_with_cursor
-from collection_repository import add_to_collection_with_cursor
-from collection_repository import remove_from_collection_with_cursor
-from collection_repository import update_collection_entry_with_cursor
-from event_repository import create_event_with_cursor
+from repositories.transaction_repository import create_transaction_with_cursor
+from repositories.transaction_repository import add_transaction_item_with_cursor
+from repositories.collection_repository import add_to_collection_with_cursor
+from repositories.collection_repository import remove_from_collection_with_cursor
+from repositories.collection_repository import update_collection_entry_with_cursor
+from repositories.event_repository import create_event_with_cursor
 
 def add_cards_with_transaction(
     event_date,
