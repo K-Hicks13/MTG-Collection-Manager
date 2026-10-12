@@ -1,8 +1,9 @@
-from scryfall_api import get_card_by_scryfall_id
+from api.scryfall_api import get_card_by_scryfall_id
 from card_database import get_or_create_set
 from card_database import get_card
 from card_database import add_card
-from transaction_service import add_cards_with_transaction
+from services.transaction_service import add_cards_with_transaction
+
 
 def get_or_create_card_from_scryfall(scryfall_id):
     card_data = get_card_by_scryfall_id(scryfall_id)
